@@ -6,6 +6,9 @@
 <title>Page not found | PPR Ledger</title>
 <meta name="robots" content="noindex"><meta name="description" content="The best fantasy football tools for PPR leagues, sorted and hand-picked.">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="color-scheme" content="dark">
 <link rel="canonical" href="https://pprledger.com/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://pprledger.com/">
@@ -16,45 +19,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0a0d0c">
 <link rel="preload" href="/fonts/InstrumentSerif-latin.woff2" as="font" type="font/woff2" crossorigin>
-<style>
-@font-face{font-family:'Instrument Serif';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/InstrumentSerif-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
-@font-face{font-family:'Inter';font-style:normal;font-weight:400 600;font-display:swap;src:url(/fonts/Inter-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
-@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url(/fonts/JetBrainsMono-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
-:root{--bg:#0a0d0c;--bg2:#101614;--line:rgba(255,255,255,.08);--ink:#e9efec;--muted:#93a39b;--em:#34d399;--em-d:#10b981;--gold:#d9b46a}
-*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
-body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}
-.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-a{color:var(--em)}
-.hero{position:relative;overflow:hidden;padding:96px 0 104px;border-bottom:1px solid var(--line)}
-.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(800px 420px at 80% 0%,rgba(52,211,153,.16),transparent 60%),radial-gradient(600px 400px at 0% 100%,rgba(217,180,106,.08),transparent 60%);pointer-events:none}
-.hero::after{content:"";position:absolute;inset:0;background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.035) 0 1px,transparent 1px 36px);mask-image:linear-gradient(180deg,#000 10%,transparent 90%);pointer-events:none}
-.hero .wrap{position:relative;z-index:1}
-.chart{position:absolute;right:-20px;bottom:0;width:min(520px,70%);opacity:.5;z-index:0}
-.mark{font-family:"Instrument Serif",Georgia,serif;font-weight:400;font-size:clamp(3rem,10vw,6rem);line-height:1.12;letter-spacing:-.02em;margin:0 0 20px;padding-bottom:.12em;background:linear-gradient(180deg,#fff,#b9c7c0);-webkit-background-clip:text;background-clip:text;color:transparent}
-.tag{font-size:clamp(1.1rem,2.4vw,1.35rem);color:var(--muted);margin:0 0 36px;max-width:560px}
-.btn{display:inline-flex;align-items:center;background:linear-gradient(180deg,#3ee0a5,#10b981);color:#04130d;font-weight:600;padding:15px 28px;border-radius:10px;text-decoration:none;font-size:1.02rem;box-shadow:0 1px 0 rgba(255,255,255,.35) inset,0 12px 34px -12px rgba(52,211,153,.6);transition:transform .15s}
-.btn:hover{transform:translateY(-1px)}
-.btn.alt{background:transparent;color:var(--ink);border:1px solid rgba(52,211,153,.5);box-shadow:none}
-.btn.alt:hover{background:rgba(52,211,153,.08)}
-.btn:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
-main section{padding:72px 0;border-bottom:1px solid var(--line)}
-h2{font-family:"Instrument Serif",Georgia,serif;font-weight:400;font-size:clamp(1.8rem,4vw,2.6rem);letter-spacing:-.01em;margin:0 0 28px;line-height:1.1}
-h2::before{content:"";display:block;width:28px;height:2px;background:var(--gold);margin-bottom:18px}
-.grid{list-style:none;margin:0;padding:0;display:grid;gap:14px}
-.grid li{background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.01));border:1px solid var(--line);border-radius:14px;padding:24px;color:#cfd9d4}
-.ic{width:38px;height:38px;border-radius:9px;border:1px solid rgba(52,211,153,.3);background:rgba(52,211,153,.06);display:grid;place-items:center;margin-bottom:14px}
-.cta{background:radial-gradient(600px 240px at 50% 0%,rgba(52,211,153,.10),transparent 70%),var(--bg2);border:1px solid var(--line);border-radius:18px;padding:40px 28px;text-align:center}
-.cta h2::before{margin-left:auto;margin-right:auto}
-.cta p{color:var(--muted);margin:0 auto 26px;max-width:520px}
-.legal{display:grid;gap:0}
-.legal h2{font-size:1.6rem;margin-bottom:12px}
-.small{font-size:.92rem;color:var(--muted);margin:0 0 10px}
-footer{padding:44px 0 56px;font-size:.86rem;color:var(--muted)}
-footer p{margin:0 0 8px}
-@media(min-width:760px){.grid{grid-template-columns:repeat(3,1fr)}.legal{grid-template-columns:1fr 1fr;gap:56px}.legal section{border:0}.cta{padding:56px}}
-@media(prefers-reduced-motion:reduce){.btn{transition:none}}
-.skip{position:absolute;left:12px;top:-60px;z-index:99;padding:10px 16px;background:#fff;color:#111;border-radius:8px;font-weight:600}.skip:focus{top:12px}a[href^="mailto:"]{display:inline-block;padding:10px 2px;min-height:44px;box-sizing:border-box}.copy{margin-left:8px;min-height:44px;padding:0 14px;border-radius:999px;border:1px solid currentColor;background:transparent;color:inherit;font:inherit;font-size:.85em;cursor:pointer}</style>
-<style>.nf{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;background:#0a0d0c;color:#fff}.nf h1{margin:0 0 16px}.nf a{display:inline-flex;align-items:center;min-height:44px;padding:12px 24px;border-radius:10px;background:#34d399;color:#0a0d0c;font-weight:600;text-decoration:none}</style>
+<style>@font-face{font-family:'Instrument Serif';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/InstrumentSerif-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}@font-face{font-family:'Inter';font-style:normal;font-weight:400 600;font-display:swap;src:url(/fonts/Inter-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}body{margin:0;min-height:100vh;display:grid;place-items:center;background:#0C1016;color:#F6F7F9;font:400 1rem/1.5 Inter,system-ui,sans-serif;padding:24px}.nf{text-align:center;max-width:32rem}.nf h1{font-family:"Instrument Serif",Georgia,serif;font-weight:400;font-size:clamp(2.4375rem,8vw,3.8125rem);margin:24px 0 12px;line-height:1.1}.nf p{color:#B3BAC5;margin:0 0 32px}.nf a{display:inline-flex;align-items:center;min-height:48px;padding:0 24px;border-radius:12px;background:#3DD6A3;color:#04130D;font-weight:600;text-decoration:none}.nf a:focus-visible{outline:2px solid #D9B46A;outline-offset:3px}.logo{height:40px;width:auto}.skip{position:absolute;left:12px;top:-60px;padding:12px 16px;background:#fff;color:#111;border-radius:8px}.skip:focus{top:12px}.brand{text-decoration:none}.wm{font-family:"Instrument Serif",Georgia,serif;font-size:1.5625rem;line-height:1;color:#F6F7F9;letter-spacing:-.01em}footer .wm{display:inline-block;margin-bottom:24px}.nf .wm{font-size:2rem}</style>
+<style>@font-face{font-family:'Instrument Serif';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/InstrumentSerif-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}@font-face{font-family:'Inter';font-style:normal;font-weight:400 600;font-display:swap;src:url(/fonts/Inter-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}body{margin:0;min-height:100vh;display:grid;place-items:center;background:#0C1016;color:#F6F7F9;font:400 1rem/1.5 Inter,system-ui,sans-serif;padding:24px}.nf{text-align:center;max-width:32rem}.nf h1{font-family:"Instrument Serif",Georgia,serif;font-weight:400;font-size:clamp(2.4375rem,8vw,3.8125rem);margin:24px 0 12px;line-height:1.1}.nf p{color:#B3BAC5;margin:0 0 32px}.nf a{display:inline-flex;align-items:center;min-height:48px;padding:0 24px;border-radius:12px;background:#3DD6A3;color:#04130D;font-weight:600;text-decoration:none}.nf a:focus-visible{outline:2px solid #D9B46A;outline-offset:3px}.logo{height:40px;width:auto}.skip{position:absolute;left:12px;top:-60px;padding:12px 16px;background:#fff;color:#111;border-radius:8px}.skip:focus{top:12px}</style>
 </head>
-<body><a class="skip" href="#main">Skip to content</a><main id="main" class="nf"><h1>Page not found</h1><p>That page doesn't exist.</p><a href="/">Go to the PPR Ledger home page</a></main><script>document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){var b=document.createElement("button");b.type="button";b.className="copy";b.textContent="Copy";b.setAttribute("aria-label","Copy email address "+a.textContent);b.onclick=function(){navigator.clipboard.writeText(a.textContent).then(function(){b.textContent="Copied"; setTimeout(function(){b.textContent="Copy"},2000)})};a.after(b)})</script></body></html>
+<body><a class="skip" href="#main">Skip to content</a><main id="main" class="nf"><span class="wm">PPR Ledger</span><h1>Page not found</h1><p>That page doesn't exist.</p><a href="/">Go to the PPR Ledger home page</a></main><script>document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){var b=document.createElement("button");b.type="button";b.className="copy";b.textContent="Copy";b.setAttribute("aria-label","Copy email address "+a.textContent);b.onclick=function(){navigator.clipboard.writeText(a.textContent).then(function(){b.textContent="Copied"; setTimeout(function(){b.textContent="Copy"},2000)})};a.after(b)})</script></body></html>
