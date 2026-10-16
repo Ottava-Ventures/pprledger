@@ -31,7 +31,7 @@ a{color:var(--em)}
 .hero::after{content:"";position:absolute;inset:0;background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.035) 0 1px,transparent 1px 36px);mask-image:linear-gradient(180deg,#000 10%,transparent 90%);pointer-events:none}
 .hero .wrap{position:relative;z-index:1}
 .chart{position:absolute;right:-20px;bottom:0;width:min(520px,70%);opacity:.5;z-index:0}
-.mark{font-family:"Instrument Serif",Georgia,serif;font-weight:400;font-size:clamp(3rem,10vw,6rem);line-height:.95;letter-spacing:-.02em;margin:0 0 20px;background:linear-gradient(180deg,#fff,#b9c7c0);-webkit-background-clip:text;background-clip:text;color:transparent}
+.mark{font-family:"Instrument Serif",Georgia,serif;font-weight:400;font-size:clamp(3rem,10vw,6rem);line-height:1.12;letter-spacing:-.02em;margin:0 0 20px;padding-bottom:.12em;background:linear-gradient(180deg,#fff,#b9c7c0);-webkit-background-clip:text;background-clip:text;color:transparent}
 .tag{font-size:clamp(1.1rem,2.4vw,1.35rem);color:var(--muted);margin:0 0 36px;max-width:560px}
 .btn{display:inline-flex;align-items:center;background:linear-gradient(180deg,#3ee0a5,#10b981);color:#04130d;font-weight:600;padding:15px 28px;border-radius:10px;text-decoration:none;font-size:1.02rem;box-shadow:0 1px 0 rgba(255,255,255,.35) inset,0 12px 34px -12px rgba(52,211,153,.6);transition:transform .15s}
 .btn:hover{transform:translateY(-1px)}
@@ -54,9 +54,9 @@ footer{padding:44px 0 56px;font-size:.86rem;color:var(--muted)}
 footer p{margin:0 0 8px}
 @media(min-width:760px){.grid{grid-template-columns:repeat(3,1fr)}.legal{grid-template-columns:1fr 1fr;gap:56px}.legal section{border:0}.cta{padding:56px}}
 @media(prefers-reduced-motion:reduce){.btn{transition:none}}
-</style>
+.skip{position:absolute;left:12px;top:-60px;z-index:99;padding:10px 16px;background:#fff;color:#111;border-radius:8px;font-weight:600}.skip:focus{top:12px}a[href^="mailto:"]{display:inline-block;padding:10px 2px;min-height:44px;box-sizing:border-box}.copy{margin-left:8px;min-height:44px;padding:0 14px;border-radius:999px;border:1px solid currentColor;background:transparent;color:inherit;font:inherit;font-size:.85em;cursor:pointer}</style>
 </head>
-<body>
+<body><a class="skip" href="#main">Skip to content</a>
 <header class="hero">
 <svg class="chart" viewBox="0 0 520 220" aria-hidden="true" fill="none"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#34d399" stop-opacity=".35"/><stop offset="1" stop-color="#34d399" stop-opacity="0"/></linearGradient></defs><path d="M0 190 L60 170 L120 178 L180 130 L240 142 L300 96 L360 108 L420 60 L480 70 L520 30 L520 220 L0 220Z" fill="url(#g)"/><path d="M0 190 L60 170 L120 178 L180 130 L240 142 L300 96 L360 108 L420 60 L480 70 L520 30" stroke="#34d399" stroke-width="2"/></svg>
 <div class="wrap">
@@ -64,7 +64,7 @@ footer p{margin:0 0 8px}
 <p class="tag">The best fantasy football tools for PPR leagues, sorted and hand-picked.</p>
 <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfNv3nU7Va9gNNBcES0qTLpC2VksJACw_Sjrzsr99mxCDPBxg/viewform" target="_blank" rel="noopener">Join the waitlist<span class="sr"> (opens in a new tab)</span></a>
 </div></header>
-<main class="wrap">
+<main id="main" class="wrap">
 <section aria-labelledby="get"><h2 id="get">What you get</h2><ul class="grid">
 <li><div class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div>A directory of PPR-friendly tools: rankings, trade calculators, waiver helpers, and target and snap-share data.</li>
 <li><div class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></div>A short, free weekly email telling you which tools are worth your time this week.</li>
@@ -86,5 +86,5 @@ footer p{margin:0 0 8px}
 <p>Contact: <a href="mailto:hello@pprledger.com">hello@pprledger.com</a></p>
 <p>© 2026 PPR Ledger</p>
 </div></footer>
-</body>
+<script>document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){var b=document.createElement("button");b.type="button";b.className="copy";b.textContent="Copy";b.setAttribute("aria-label","Copy email address "+a.textContent);b.onclick=function(){navigator.clipboard.writeText(a.textContent).then(function(){b.textContent="Copied"; setTimeout(function(){b.textContent="Copy"},2000)})};a.after(b)})</script></body>
 </html>

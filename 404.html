@@ -31,7 +31,7 @@ a{color:var(--em)}
 .hero::after{content:"";position:absolute;inset:0;background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.035) 0 1px,transparent 1px 36px);mask-image:linear-gradient(180deg,#000 10%,transparent 90%);pointer-events:none}
 .hero .wrap{position:relative;z-index:1}
 .chart{position:absolute;right:-20px;bottom:0;width:min(520px,70%);opacity:.5;z-index:0}
-.mark{font-family:"Instrument Serif",Georgia,serif;font-weight:400;font-size:clamp(3rem,10vw,6rem);line-height:.95;letter-spacing:-.02em;margin:0 0 20px;background:linear-gradient(180deg,#fff,#b9c7c0);-webkit-background-clip:text;background-clip:text;color:transparent}
+.mark{font-family:"Instrument Serif",Georgia,serif;font-weight:400;font-size:clamp(3rem,10vw,6rem);line-height:1.12;letter-spacing:-.02em;margin:0 0 20px;padding-bottom:.12em;background:linear-gradient(180deg,#fff,#b9c7c0);-webkit-background-clip:text;background-clip:text;color:transparent}
 .tag{font-size:clamp(1.1rem,2.4vw,1.35rem);color:var(--muted);margin:0 0 36px;max-width:560px}
 .btn{display:inline-flex;align-items:center;background:linear-gradient(180deg,#3ee0a5,#10b981);color:#04130d;font-weight:600;padding:15px 28px;border-radius:10px;text-decoration:none;font-size:1.02rem;box-shadow:0 1px 0 rgba(255,255,255,.35) inset,0 12px 34px -12px rgba(52,211,153,.6);transition:transform .15s}
 .btn:hover{transform:translateY(-1px)}
@@ -54,7 +54,7 @@ footer{padding:44px 0 56px;font-size:.86rem;color:var(--muted)}
 footer p{margin:0 0 8px}
 @media(min-width:760px){.grid{grid-template-columns:repeat(3,1fr)}.legal{grid-template-columns:1fr 1fr;gap:56px}.legal section{border:0}.cta{padding:56px}}
 @media(prefers-reduced-motion:reduce){.btn{transition:none}}
-</style>
+.skip{position:absolute;left:12px;top:-60px;z-index:99;padding:10px 16px;background:#fff;color:#111;border-radius:8px;font-weight:600}.skip:focus{top:12px}a[href^="mailto:"]{display:inline-block;padding:10px 2px;min-height:44px;box-sizing:border-box}.copy{margin-left:8px;min-height:44px;padding:0 14px;border-radius:999px;border:1px solid currentColor;background:transparent;color:inherit;font:inherit;font-size:.85em;cursor:pointer}</style>
 <style>.nf{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;background:#0a0d0c;color:#fff}.nf h1{margin:0 0 16px}.nf a{display:inline-flex;align-items:center;min-height:44px;padding:12px 24px;border-radius:10px;background:#34d399;color:#0a0d0c;font-weight:600;text-decoration:none}</style>
 </head>
-<body><main class="nf"><h1>Page not found</h1><p>That page doesn't exist.</p><a href="/">Go to the PPR Ledger home page</a></main></body></html>
+<body><a class="skip" href="#main">Skip to content</a><main id="main" class="nf"><h1>Page not found</h1><p>That page doesn't exist.</p><a href="/">Go to the PPR Ledger home page</a></main><script>document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){var b=document.createElement("button");b.type="button";b.className="copy";b.textContent="Copy";b.setAttribute("aria-label","Copy email address "+a.textContent);b.onclick=function(){navigator.clipboard.writeText(a.textContent).then(function(){b.textContent="Copied"; setTimeout(function(){b.textContent="Copy"},2000)})};a.after(b)})</script></body></html>
