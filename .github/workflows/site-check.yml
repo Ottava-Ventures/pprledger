@@ -1,0 +1,20 @@
+name: Site check
+
+# Runs on every pull request so problems show up before you merge.
+# Checks only files in this repo: broken links/images/fonts, missing #sections,
+# sitemap and manifest entries, page titles, placeholder text, privacy page.
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check the site
+        run: python3 .github/scripts/check_site.py .
